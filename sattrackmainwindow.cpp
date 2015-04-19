@@ -56,7 +56,7 @@ SatTrackMainWindow::SatTrackMainWindow(QWidget *parent) :
     sat=NULL;
     context=NULL;
     mapdialog=NULL;
-    ui->tleFileLine->setText("/home/paul/iss2.tle");
+    ui->tleFileLine->setText(QApplication::applicationDirPath()  +"/issTest.tle");
     ui->dateTimeEditTarget->setDateTime( QDateTime::currentDateTimeUtc());
 }
 
